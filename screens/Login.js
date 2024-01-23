@@ -23,7 +23,7 @@ export default function Login() {
         <View style = {styles.container}>
             <TextInput
             label="Username"
-            style={formData.input_field}
+            style={styles.input_field}
             value={formData.username}
             onChangeText={text => setFormData({ ...formData, username: text })}
             error={formData.username.length===0 && showError}
